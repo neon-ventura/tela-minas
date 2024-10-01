@@ -1,11 +1,10 @@
+import Nav from '../components/nav/Nav.jsx'
 import styles from './About.module.css'
+
 
 export default function About() {
     return (
-        <>
-            <h1>About</h1>
-            <p>Seguimento das tasks abaixo, não esquece de dar commit no git ein</p>
-        </>
+        <Nav/>
     )
 }
 
