@@ -97,7 +97,7 @@
     @media (max-width:430px){
         box-sizing: border-box;
         margin-top: 40px;
-        padding: 20px;
+        padding: 40px;
     }
 
     @media (min-width:450px){
