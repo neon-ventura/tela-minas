@@ -7,7 +7,7 @@ import styles from './page.module.css'
 export default function Home() {
   return (
     <>
-      <h2>Obs: Antes de visualizar os exemplos, certifique-se de estar usando um dispositivo móvel.</h2>
+      <h2 className={styles.h2}>Obs: Antes de visualizar os exemplos, certifique-se de estar usando um dispositivo móvel.</h2>
 
     <h1 className={styles.h1}>Exemplo 1</h1>
     <p>Neste exemplo a página inicial consiste em um vídeo onde mostra como é a empresa, tanto na fachada quanto a área de produção. <br /> (logo abaixo tem uma representação de um vídeo ilustrativo)</p>
