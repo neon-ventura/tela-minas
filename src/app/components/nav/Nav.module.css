@@ -1,0 +1,20 @@
+.container {
+    background-color: white !important;
+}
+
+.nav {
+    background-color: #cd4244;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.nav_a {
+    color: white !important;
+}
+
+.hamburguer {
+   border: none;
+   background-color: transparent !important;
+   border: none !important;
+}
