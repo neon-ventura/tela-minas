@@ -3,6 +3,7 @@
 .values {
     background-color: var(--graphite);
     padding-top: 30px;
+    height: 700px;
     border-radius: 0px 0px 20px 20px;
 }
 
