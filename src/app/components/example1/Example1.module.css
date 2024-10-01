@@ -1,13 +1,21 @@
 .header {
     position: relative;
     width: 100%;
-    max-width: 800px;
+    height: 80vh; /* Faz com que a header ocupe a altura total da tela */
+    overflow: hidden; /* Garante que o conteúdo fora da área visível seja cortado */
 }
 
 .video {
-    height: auto;
-    width: 100%;
-    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%; /* Define o vídeo para cobrir a largura total */
+    min-height: 100%; /* Define o vídeo para cobrir a altura total */
+    width: auto; /* Faz com que a largura se ajuste automaticamente */
+    height: auto; /* Faz com que a altura se ajuste automaticamente */
+    z-index: 0; /* Mantém o vídeo atrás do conteúdo */
+    transform: translate(-50%, -50%); /* Centraliza o vídeo */
+    object-fit: cover; /* Faz o vídeo se comportar como cover, cortando se necessário */
 }
 
 .overlay {
@@ -19,13 +27,12 @@
     display: flex;
     justify-content: center;
     padding: 35px;
-    padding-bottom: 300px;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.4);
-    /* Fundo semitransparente */
     color: white;
     z-index: 1;
 }
+
 
 .h1 {
     font-weight: 300;
