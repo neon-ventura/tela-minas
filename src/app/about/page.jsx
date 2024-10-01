@@ -15,6 +15,11 @@ export default function About() {
                 <Image src={logoimg} width={300} height={300} alt="Diamond Image" className={styles.diamondImage}/>
             </div>
         </div>
+        <div className={styles.pAboutContainer}>
+            <p className={styles.pAbout}>Atuamos desde 2006 na cidade de Manhuaçu/MG, fruto de uma visão  empreendedora, ímpar de seus idealizadores, nasceu a Fábrica  Telaminas. Ao longo dos anos sempre na busca constante de sua própria superação, a empresa hoje se enquadra como um dos maiores  fabricantes de Telas e Alambrados do país.</p>
+            <p className={styles.pAbout}>A Telaminas apresenta soluções sob medida para as suas necessidades em  cercamento. Sempre com atendimento personalizado, desenvolve  trabalhos focados  em estabelecer uma parceria duradoura, para que junto com você, seja  possível realizar boas ações. Por esse e outros motivos, hoje a Telaminas  é conceituada no mercado de telas com foco total na qualidade e  excelência de seus produtos.</p>
+            <p className={styles.pAbout}>Procuramos melhorar continuamente nossos serviços para que nossos  clientes sintam-se satisfeitos e possam sempre contar com nosso  suporte.</p>
+        </div>
         </>
 
     )
@@ -26,9 +31,9 @@ export default function About() {
 // (TUDO RESPONSIVO - SEGUINDO MOBILE FIRST)
 
 // 2 - Fazer a interação entre o item "Sobre nós" da Nav 
-// (Ao clicar em sobre-nós, o site deve ser levado a /about)
+// (Ao clicar em sobre-nós, o site deve ser levado a /about)                                    PRONTO
 
-// Obs: para visualizar as alterações, digita:  /about , na url
+// Obs: para visualizar as alterações, digita:  /about , na url                                     --------
 
 
 
