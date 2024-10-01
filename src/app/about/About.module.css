@@ -103,12 +103,12 @@
     @media (min-width:450px){
         display: block;
         position: fixed;
-        top: 8.5em;
+        top: 14em;
         left: 40rem;
         width: 50%;
         box-sizing: border-box;
         margin-top: 40px;
-        padding: 100px;
+        padding: 10px;
     }
 }
 
