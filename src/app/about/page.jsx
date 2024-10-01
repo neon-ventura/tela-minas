@@ -20,6 +20,8 @@ export default function About() {
             <p className={styles.pAbout}>A Telaminas apresenta soluções sob medida para as suas necessidades em  cercamento. Sempre com atendimento personalizado, desenvolve  trabalhos focados  em estabelecer uma parceria duradoura, para que junto com você, seja  possível realizar boas ações. Por esse e outros motivos, hoje a Telaminas  é conceituada no mercado de telas com foco total na qualidade e  excelência de seus produtos.</p>
             <p className={styles.pAbout}>Procuramos melhorar continuamente nossos serviços para que nossos  clientes sintam-se satisfeitos e possam sempre contar com nosso  suporte.</p>
         </div>
+
+        
         </>
 
     )
