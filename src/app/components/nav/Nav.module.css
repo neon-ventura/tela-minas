@@ -1,4 +1,4 @@
-.container {
+/* .container {
     background-color: white !important;
 }
 
@@ -17,4 +17,35 @@
    border: none;
    background-color: transparent !important;
    border: none !important;
+} */
+
+.navbar{
+    @media (min-width:450px){
+        height: 100px;
+    }
 }
+
+.nav_ul{
+    @media (min-width: 450px) {
+        display: flex;
+        /* border: 1px solid var(--red); */
+        padding-left: 100px;
+        width: 80%;
+        justify-content: space-around;
+    }
+}
+
+.logo{
+    @media (min-width: 450px){
+        padding: 0 100px;
+    }
+}
+
+.toggler{
+    border: none
+}
+.toggler:focus{
+    border: none;
+    box-shadow: none;
+}
+
