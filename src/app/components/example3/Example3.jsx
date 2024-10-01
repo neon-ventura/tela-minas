@@ -1,4 +1,4 @@
-import Nav from "../nav/Nav";
+import Nav from "../nav/Nav.jsx";
 import styles from './Example3.module.css'
 
 export default function Example3() {
