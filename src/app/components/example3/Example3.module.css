@@ -1,6 +1,7 @@
 .container {
     background-image: url('/example/example3.jpeg');
     height: 600px;
+    background-position: right;
 }
 
 .txt {
