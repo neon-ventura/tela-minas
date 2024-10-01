@@ -1,10 +1,22 @@
 import Nav from '../components/nav/Nav.jsx'
+import '@/app/globals.css'
 import styles from './About.module.css'
+import Image from 'next/image.js'
+import logoimg from '../../../public/about/img1.jpeg'
 
 
 export default function About() {
     return (
-        <Nav/>
+        <>
+
+        <h1 className={styles.title}>Quem somos?</h1>
+        <div className={styles.imageContainer}>
+            <div className={styles.diamondLayout}>
+                <Image src={logoimg} width={300} height={300} alt="Diamond Image" className={styles.diamondImage}/>
+            </div>
+        </div>
+        </>
+
     )
 }
 
