@@ -1,5 +1,6 @@
 import Image from "next/image"
 import styles from './Nav.module.css'
+import Link from "next/link"
 import logoimg from '../../../../public/nav/logo.png' // tive que fazer isso, não consegui colocar a imagem de outro jeito hahahah foi mal
 
 export default function Nav(){
@@ -15,10 +16,10 @@ export default function Nav(){
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                        <a className="nav-link" aria-current="page" href="#">Home</a>
+                        <Link href={"/"}>Home</Link>
                         </li>
                         <li className="nav-item">
-                        <a className="nav-link" href="#">Sobre nós</a>
+                        <Link href={"/about"}>Sobre nós</Link>
                         </li>
                         <li className="nav-item">
                         <a className="nav-link" href="#">Contate nos</a>
