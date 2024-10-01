@@ -1,6 +1,7 @@
+/* Valores */
+
 .values {
     background-color: var(--graphite);
-    height: 100vh;
     padding-top: 30px;
     border-radius: 0px 0px 20px 20px;
 }
