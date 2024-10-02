@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import localFont from "next/font/local";
 import "./globals.css";
 import Nav from './components/nav/Nav';
+import Footer from './components/footer/Footer';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -25,8 +26,9 @@ export default function RootLayout({ children }) {
     <html lang="pt-br">
         <title>Tela Minas</title>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {/* <Nav/> */}
+        <Nav/>
         {children}
+        <Footer/>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
       </body>
     </html>

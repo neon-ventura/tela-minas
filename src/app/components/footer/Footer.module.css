@@ -1,0 +1,13 @@
+.footerBody{
+    background: var(--graphite);
+    height: 700px;
+}
+.footerHeader{
+    width: 100%;
+    height: 200px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.logoimg{
+
+}
