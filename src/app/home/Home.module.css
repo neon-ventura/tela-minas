@@ -1,4 +1,4 @@
-/* Valores */
+/* Values */
 
 .values {
     background-color: var(--graphite);
@@ -40,4 +40,42 @@
     text-align: center;
     font-weight: 600;
     font-size: 1.4em;
+}
+
+/* Products */
+
+.products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.h1_product {
+    color: var(--red);
+    font-size: 2em;
+    font-weight: 400;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.section_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img_product {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border: 2px solid var(--red);
+    border-radius: 10px;
+}
+
+.btn_product {
+    padding: 15px 0px;
+    width: 200px;
+    border: none;
+    background-color: var(--red);
+    color: #fff;
 }
