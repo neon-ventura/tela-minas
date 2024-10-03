@@ -5,6 +5,7 @@ export default function Example1() {
     return (
         <>
             
+            <Nav />
             <header className={styles.header}>
                 <div className={styles.overlay}>
                     <p className={styles.p}>Seja Bem Vindo(a)</p>
