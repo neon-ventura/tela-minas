@@ -27,6 +27,9 @@ export default function About() {
     )
 }
 
+
+
+
 // Task Pedro:
 
 // 1 - Fazer o design do about da empresa, seguindo o formato e a paletagem de cores do figma
