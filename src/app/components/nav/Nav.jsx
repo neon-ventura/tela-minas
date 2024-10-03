@@ -7,7 +7,7 @@ export default function Nav(){
         <nav className={`navbar navbar-expand-lg navbar-light`}>
             <div className={`${styles.navbar} container-fluid`}>
                 <a className={styles.logo} href="/">
-                    <Image className={styles.logoimg}src={logoimg} width={300} height={105}/>
+                    <Image className={styles.logoimg}src={logoimg}/>
                 </a>
                 <button className={`${styles.toggler} navbar-toggler`} type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <Image height={50} width={50} src={"/nav/barra-de-menu.png"}/>
