@@ -4,7 +4,7 @@ import styles from './Example3.module.css'
 export default function Example3() {
     return (
         <>
-            <Nav />
+            
             <header className={styles.container}>
                 <div className={styles.txt}>
                     <p className={styles.p}>Seja Bem Vindo(a)</p>
