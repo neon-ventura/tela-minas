@@ -20,8 +20,10 @@
 } */
 
 .navbar{
+    /* border: 1px solid var(--red); */
     @media (min-width:450px){
-        height: 100px;
+        height: 130px;
+        font-size: 19pt;
     }
 }
 
