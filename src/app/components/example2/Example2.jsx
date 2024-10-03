@@ -4,7 +4,6 @@ import styles from './Example2.module.css'
 export default function Example2() {
     return (
         <>
-            <Nav />
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
