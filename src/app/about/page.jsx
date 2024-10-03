@@ -3,11 +3,13 @@ import '@/app/globals.css'
 import styles from './About.module.css'
 import Image from 'next/image.js'
 import logoimg from '../../../public/about/img1.jpeg'
+import Footer from '../components/footer/Footer.jsx'
 
 
 export default function About() {
     return (
         <>
+        <Nav/>
         <div className={styles.mainContent}>
             <h1 className={styles.title}>Quem somos?</h1>
             <div className={styles.imageContainer}>
@@ -21,7 +23,7 @@ export default function About() {
                 <p className={styles.pAbout}>Procuramos melhorar continuamente nossos serviços para que nossos  clientes sintam-se satisfeitos e possam sempre contar com nosso  suporte.</p>
             </div>
         </div>
-        
+        <Footer/>
         </>
 
     )
