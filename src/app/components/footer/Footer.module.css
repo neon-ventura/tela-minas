@@ -1,14 +1,88 @@
 .footerBody{
     background: var(--graphite);
     width: 100%;
-    height: 50rem; 
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
 }
 .footerHeader{
     width: 100%;
-    height: 200px;
-    box-sizing: border-box;
-    padding: 10px 40px;
+    @media (max-width: 430px){
+        height: 100px;
+        box-sizing: border-box;
+        padding: 25px 0 0 10px;
+    }
 }
-.logoimg{
 
+.icons{
+    @media (max-width: 430px){
+        height: 50px;
+        margin-top: 70px;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        gap: 35px;
+    }
+}
+
+.section{
+    @media (max-width:430px){
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+}
+
+.section *{
+    list-style-type: none;
+    padding: 0;
+    color: var(--white);
+}
+
+.sectionTitle{
+    font-weight: 400;
+    font-size: 12pt;
+}
+
+.section .sectionLeft li,
+.section .sectionRight li{
+    font-weight: 100;
+    font-size: 10pt;
+}
+
+.sectionLeft, .sectionRight{
+    width: 50%;
+    padding: 0 20px;
+}
+
+.sectionLeft ul, .sectionRight ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.lineContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    width: 92%;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.copy{
+    color: var(--white);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 10pt;
+    font-weight: 100;
 }
