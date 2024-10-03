@@ -70,6 +70,7 @@
     margin-bottom: 40px;
     border: 2px solid var(--red);
     border-radius: 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.500);
 }
 
 .btn_product {
@@ -86,10 +87,12 @@
 .about {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 100vh;
     background-color: var(--graphite);
     color: #fff;
     flex-direction: column;
+    margin-bottom: 50px;
 }
 
 .h1_about {
@@ -124,4 +127,81 @@
 
 .h2_data {
     font-size: 2em;
+}
+
+/* Testimonials */
+
+.section_cards_testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonials_card {
+    padding: 30px;
+}
+
+.img_testimonials {
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.500);
+}
+
+/* Brands */
+
+.brand_row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.row {
+    flex-grow: 1;
+    border-top: 2px solid black;
+    margin: 0 20px;
+}
+
+.text_center {
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.brands_img {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+
+/* Local */
+
+.map {
+    width: 100%;
+}
+
+.informations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.informations_item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    margin-top: 40px;
+}
+
+.informations_item_zap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    margin-top: 50px;
+}
+
+.informations_p {
+    width: 250px;
 }

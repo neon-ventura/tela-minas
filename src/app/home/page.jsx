@@ -45,20 +45,71 @@ export default function Home() {
                 <h1 className={styles.h1_about}>Sobre nós</h1>
                 <Image className={styles.video_about} src={"/home/video.png"} height={200} width={350} />
                 <div className={styles.section_data}>
-                        <div className={styles.data}>
-                            <h2 className={styles.h2_data}>+1000</h2>
-                            <p>Clientes Satisfeitos</p>
-                        </div>
-                        <div className={styles.data}>
-                            <h2 className={styles.h2_data}>+18</h2>
-                            <p>Anos de Estabelecimento</p>
-                        </div>
-                        <div className={styles.data}>
-                            <h2 className={styles.h2_data}>+500</h2>
-                            <p>Projetos Feitos</p>
-                        </div>
+                    <div className={styles.data}>
+                        <h2 className={styles.h2_data}>+1000</h2>
+                        <p>Clientes Satisfeitos</p>
+                    </div>
+                    <div className={styles.data}>
+                        <h2 className={styles.h2_data}>+18</h2>
+                        <p>Anos de Estabelecimento</p>
+                    </div>
+                    <div className={styles.data}>
+                        <h2 className={styles.h2_data}>+500</h2>
+                        <p>Projetos Feitos</p>
+                    </div>
                 </div>
                 <button className={styles.btn_about}>Saiba Mais</button>
+            </div>
+
+            {/* Section Testimonials */}
+
+            <div className={styles.testimonials}>
+                <h1 className={styles.h1_product}> <Image src={"/home/alambrado.png"} height={60} width={50} /> Testemunhos</h1>
+
+                <div className={styles.section_cards_testimonials}>
+                    <div className={styles.testimonials_card}>
+                        <Image className={styles.img_testimonials} height={200} width={350} src={'/home/pvc_tes.png'} />
+                    </div>
+                    <div className={styles.testimonials_card}>
+                        <Image className={styles.img_testimonials} height={200} width={350} src={'/home/protecao_tes.jpeg'} />
+                    </div>
+                    <div className={styles.testimonials_card}>
+                        <Image className={styles.img_testimonials} height={200} width={350} src={'/home/alambrado_tes.png'} />
+                    </div>
+                </div>
+            </div>
+
+            <div className={styles.brands}>
+                <div className={styles.brand_row}>
+                    <div className={styles.row}></div>
+                    <div className={styles.text_center}>Marcas</div>
+                    <div className={styles.row}></div>
+                </div>
+
+                <div className={styles.brands_img}>
+                    <Image height={60} width={90} src={'/home/belgo.png'} />
+                    <Image height={60} width={120} src={'/home/telaminas.png'} />
+                </div>
+            </div>
+
+            {/* Local */}
+
+            <div className={styles.local}>
+                <iframe className={styles.map} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3743.039973332113!2d-42.02692082476406!3d-20.25717688120603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbb027d7aebc94b%3A0xfe3233915e6dec2!2sTelaminas%20Telas%20e%20Alambrados!5e0!3m2!1spt-PT!2sbr!4v1727998460006!5m2!1spt-PT!2sbr" width="600" height="450" loading="lazy"></iframe>
+                <div className={styles.informations}>
+                    <div className={styles.informations_item}>
+                        <Image height={50} width={50} src={'/home/local_icon.png'}/>
+                        <p className={styles.informations_p}>Av. Pres. Tancredo Neves, 891 - Santa Terezinha, Manhuaçu - MG, 36904-076</p>
+                    </div>
+                    <div className={styles.informations_item}>
+                        <Image height={50} width={50} src={'/home/time_icon.png'}/>
+                        <p className={styles.informations_p}>Segunda a Sexta: 7:30 - 18:00 <br />Sábado: 7:30 - 12:00</p>
+                    </div>
+                    <div className={styles.informations_item_zap}>
+                        <Image height={50} width={50} src={'/home/zap_icon.png'}/>
+                        <p className={styles.informations_p}>+55 (33)3332-1740</p>
+                    </div>
+                </div>
             </div>
         </>
     )
