@@ -81,13 +81,13 @@ export default function Home() {
                 <h1 className={styles.h1_product}> <Image src={"/home/alambrado.png"} height={60} width={50} /> Testemunhos</h1>
 
                 <div className={styles.section_cards_testimonials}>
-                    <div data-aos="fade-right" className={styles.testimonials_card}>
+                    <div data-aos="flip-left" className={styles.testimonials_card}>
                         <Image className={styles.img_testimonials} height={200} width={350} src={'/home/pvc_tes.png'} />
                     </div>
-                    <div data-aos="fade-left" className={styles.testimonials_card}>
+                    <div data-aos="flip-right" className={styles.testimonials_card}>
                         <Image className={styles.img_testimonials} height={200} width={350} src={'/home/protecao_tes.jpeg'} />
                     </div>
-                    <div data-aos="fade-right" className={styles.testimonials_card}>
+                    <div data-aos="flip-left" className={styles.testimonials_card}>
                         <Image className={styles.img_testimonials} height={200} width={350} src={'/home/alambrado_tes.png'} />
                     </div>
                 </div>
