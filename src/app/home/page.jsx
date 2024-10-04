@@ -6,6 +6,8 @@ import Footer from "../components/footer/Footer";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Importa o CSS do AOS
 import { useEffect } from "react";
+import Example1 from "../components/example1/Exemple1";
+import Nav from "../components/nav/Nav";
 
 export default function Home() {
 
@@ -18,6 +20,9 @@ export default function Home() {
 
     return (
         <>
+            <Nav />
+            <Example1 />
+
             {/* Section Values */}
 
             <div className={styles.values}>
