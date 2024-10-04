@@ -205,3 +205,37 @@
 .informations_p {
     width: 250px;
 }
+
+/* Qr Code */
+
+.container_qr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: var(--red);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 370px;
+    border-radius: 50px;
+    justify-content: space-around;
+}
+
+.container_img_qr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 130px;
+    background-color: #fff;
+    border-radius: 40px;
+}
+
+.qr_p {
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+}
+
+.img_qr {
+    border-radius: 40%;
+}

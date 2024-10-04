@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from './Home.module.css'
+import Footer from "../components/footer/Footer";
 
 export default function Home() {
     return (
@@ -98,19 +99,31 @@ export default function Home() {
                 <iframe className={styles.map} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3743.039973332113!2d-42.02692082476406!3d-20.25717688120603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbb027d7aebc94b%3A0xfe3233915e6dec2!2sTelaminas%20Telas%20e%20Alambrados!5e0!3m2!1spt-PT!2sbr!4v1727998460006!5m2!1spt-PT!2sbr" width="600" height="450" loading="lazy"></iframe>
                 <div className={styles.informations}>
                     <div className={styles.informations_item}>
-                        <Image height={50} width={50} src={'/home/local_icon.png'}/>
+                        <Image height={50} width={50} src={'/home/local_icon.png'} />
                         <p className={styles.informations_p}>Av. Pres. Tancredo Neves, 891 - Santa Terezinha, Manhuaçu - MG, 36904-076</p>
                     </div>
                     <div className={styles.informations_item}>
-                        <Image height={50} width={50} src={'/home/time_icon.png'}/>
+                        <Image height={50} width={50} src={'/home/time_icon.png'} />
                         <p className={styles.informations_p}>Segunda a Sexta: 7:30 - 18:00 <br />Sábado: 7:30 - 12:00</p>
                     </div>
                     <div className={styles.informations_item_zap}>
-                        <Image height={50} width={50} src={'/home/zap_icon.png'}/>
+                        <Image height={50} width={50} src={'/home/zap_icon.png'} />
                         <p className={styles.informations_p}>+55 (33)3332-1740</p>
+                    </div>
+
+                    <div className={styles.container_qr}>
+                        <div className={styles.text}>
+                            <p className={styles.qr_p}>Sua opinião é importante! <br /> Avalie-nos no Google.</p>
+                            <p className={styles.qr_p}> Escaneie o QR code <br /> ou <br /> Clique Aqui</p>
+                        </div>
+                        <div className={styles.container_img_qr}>
+                            <Image className={styles.img_qr} height={120} width={120} src={'/home/qr.png'}/>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <Footer />
         </>
     )
 }
