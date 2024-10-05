@@ -21,7 +21,7 @@ export default function Nav(){
                         <a className="nav-link" href="/about">Sobre nós</a>
                         </li>
                         <li className="nav-item">
-                        <a className="nav-link" href="#">Contate nos</a>
+                        <a className="nav-link" href="/contactus">Contate nos</a>
                         </li>
                         <li className="nav-item dropdown">
                         <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
