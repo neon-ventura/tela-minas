@@ -1,37 +1,39 @@
-.footerBody{
+
+.footerBody {
     background: var(--graphite);
     width: 100%;
     height: 40rem;
     display: grid;
     flex-direction: column;
 
-    @media (min-width: 1440px){
+    @media (min-width: 1440px) {
         flex-direction: row;
     }
-
 }
-.footerHeader{
+
+
+.footerHeader {
     width: 100%;
-    @media (max-width: 1032px){
+
+    @media (max-width: 1032px) {
         height: 100px;
         box-sizing: border-box;
         padding: 25px 0 0 10px;
     }
 
-    @media (min-width: 1440px){
+    @media (min-width: 1440px) {
         width: 30%;
         height: 5em;
-
         display: flex;
         justify-content: center;
         align-items: center;
         align-self: flex-end;
-
     }
 }
 
-.TLicons{
-    @media (max-width: 1032px){
+
+.footerBody .TLicons {
+    @media (max-width: 1032px) {
         height: 50px;
         margin-top: 70px;
         padding: 0 20px;
@@ -40,26 +42,26 @@
         gap: 35px;
     }
 
-    @media (min-width: 1440px){
+    @media (min-width: 1440px) {
         width: 30%;
         display: flex;
         justify-content: center;
-        align-self: flex-start ;
+        align-self: flex-start;
         gap: 20px;
     }
 }
 
-.TLsection{
-    @media (max-width:1032px){
+
+.footerBody .TLsection {
+    @media (max-width: 1032px) {
         width: 100%;
         display: flex;
         flex-direction: row;
-
         margin-top: 50px;
         margin-bottom: 30px;
     }
 
-    @media (min-width: 1440px){
+    @media (min-width: 1440px) {
         width: 60%;
         justify-self: end;
         display: flex;
@@ -67,58 +69,69 @@
     }
 }
 
-.TLsection *{
+
+.TLsection * {
     list-style-type: none;
     padding: 0;
     color: var(--white);
 }
 
-.sectionTitle{
+/* Títulos da seção */
+.sectionTitle {
     font-weight: 400;
     font-size: 12pt;
 
-    @media (min-width: 1440px){
+    @media (min-width: 1440px) {
         font-size: 24pt;
     }
 }
 
+
 .sectionLeft li,
-.sectionRight li{
+.sectionRight li {
     font-weight: 100;
     font-size: 10pt;
-    @media (min-width: 1440px){
+
+    @media (min-width: 1440px) {
         font-size: large;
     }
 }
 
-.sectionLeft, .sectionRight{
+
+.sectionLeft,
+.sectionRight {
     width: 50%;
     padding: 0 20px;
 
-    @media (min-width: 1440px){
+    @media (min-width: 1440px) {
         width: 40%;
     }
 }
 
-.sectionLeft ul, .sectionRight ul{
+
+.sectionLeft ul,
+.sectionRight ul {
     display: flex;
     flex-direction: column;
     gap: 15px;
     margin-top: 20px;
 }
 
-.lineContainer{
+
+.lineContainer {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.line{
+
+.line {
     width: 92%;
     border: 1px solid rgb(255, 255, 255);
 }
 
-.copy{
+
+.copy {
     color: var(--white);
     width: 100%;
     display: flex;
@@ -128,7 +141,7 @@
     font-size: 10pt;
     font-weight: 100;
 
-    @media (min-width: 1440px){
+    @media (min-width: 1440px) {
         font-size: 14pt;
     }
 }
