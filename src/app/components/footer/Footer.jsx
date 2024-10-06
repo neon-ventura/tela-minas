@@ -13,14 +13,14 @@ export default function Footer(){
             <div className={styles.footerHeader}>
                 <Image src={logoimg} className={styles.logoimg} height={85}/>
             </div>
-            <div className={styles.icons}>
+            <div className={styles.TLicons}>
                 <Link href="#"><Image src={facebook} className={styles.icon} height={30}/></Link>
                 <Link href="#"><Image src={zap} className={styles.icon} height={30}/></Link>
                 <Link href="#"><Image src={ig} className={styles.icon} height={30}/></Link>
                 <Link href="#"><Image src={facebook} className={styles.icon} height={30}/></Link>
             </div>
 
-            <div className={styles.section}>
+            <div className={styles.TLsection}>
                 <div className={styles.sectionLeft}>
                     <span className={styles.sectionTitle}>Produtos</span>
 
