@@ -1,147 +1,81 @@
-
-.footerBody {
+.footer{
+    height: 30em;
     background: var(--graphite);
-    width: 100%;
-    height: 40rem;
-    display: grid;
+
+    display: flex;
+    justify-content: center;
+}
+.asideL{
+    height: 80%;
+    width: 40%;
+
+    padding: 3em 2em;
+    
+    display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+    gap: 3em;
 
-    @media (min-width: 1440px) {
-        flex-direction: row;
-    }
+}
+.asideR{
+    height: 80%;
+    width: 60%;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    box-sizing: border-box;
+    padding: 3em 2em;
 }
 
 
-.footerHeader {
-    width: 100%;
-
-    @media (max-width: 1032px) {
-        height: 100px;
-        box-sizing: border-box;
-        padding: 25px 0 0 10px;
-    }
-
-    @media (min-width: 1440px) {
-        width: 30%;
-        height: 5em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-self: flex-end;
-    }
+.logo{
+    width: 300px;
+    height: 110px;
 }
 
-
-.footerBody .TLicons {
-    @media (max-width: 1032px) {
-        height: 50px;
-        margin-top: 70px;
-        padding: 0 20px;
-        display: flex;
-        align-items: center;
-        gap: 35px;
-    }
-
-    @media (min-width: 1440px) {
-        width: 30%;
-        display: flex;
-        justify-content: center;
-        align-self: flex-start;
-        gap: 20px;
-    }
+.iconsList{
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
 }
 
-
-.footerBody .TLsection {
-    @media (max-width: 1032px) {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        margin-top: 50px;
-        margin-bottom: 30px;
-    }
-
-    @media (min-width: 1440px) {
-        width: 60%;
-        justify-self: end;
-        display: flex;
-        flex-direction: row;
-    }
+.imageLink{
+    width: 40px;
+    height: 40px;
 }
 
+.linkPage{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+}
 
-.TLsection * {
-    list-style-type: none;
-    padding: 0;
+.linkPage h1{
+    font-size: large;
+    margin-bottom: .5em;
     color: var(--white);
+    font-weight: 600;
 }
 
-/* Títulos da seção */
-.sectionTitle {
+.linkPage *{
+    text-decoration: none;
+    color: var(--gray);
     font-weight: 400;
-    font-size: 12pt;
-
-    @media (min-width: 1440px) {
-        font-size: 24pt;
-    }
 }
 
-
-.sectionLeft li,
-.sectionRight li {
-    font-weight: 100;
-    font-size: 10pt;
-
-    @media (min-width: 1440px) {
-        font-size: large;
-    }
+.copy{
+    position: absolute;
+    color: var(--gray);
+    bottom: -28em;
 }
 
-
-.sectionLeft,
-.sectionRight {
-    width: 50%;
-    padding: 0 20px;
-
-    @media (min-width: 1440px) {
-        width: 40%;
-    }
-}
-
-
-.sectionLeft ul,
-.sectionRight ul {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-
-.lineContainer {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.line {
-    width: 92%;
-    border: 1px solid rgb(255, 255, 255);
-}
-
-
-.copy {
-    color: var(--white);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-    font-size: 10pt;
-    font-weight: 100;
-
-    @media (min-width: 1440px) {
-        font-size: 14pt;
-    }
+.line{
+    position: absolute;
+    border: solid 1px var(--gray);
+    width: 80%;
+    opacity: 100;
+    bottom: -26em;
 }

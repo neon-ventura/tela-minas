@@ -9,50 +9,42 @@ import ig from '../../../../public/footer/ig-icon.png'
 
 export default function Footer(){
     return (
-        <div className={styles.footerBody}>
-            <div className={styles.footerHeader}>
-                <Image src={logoimg} className={styles.logoimg} height={85}/>
-            </div>
-            <div className={styles.TLicons}>
-                <Link href="#"><Image src={facebook} className={styles.icon} height={30}/></Link>
-                <Link href="#"><Image src={zap} className={styles.icon} height={30}/></Link>
-                <Link href="#"><Image src={ig} className={styles.icon} height={30}/></Link>
-                <Link href="#"><Image src={facebook} className={styles.icon} height={30}/></Link>
-            </div>
-
-            <div className={styles.TLsection}>
-                <div className={styles.sectionLeft}>
-                    <span className={styles.sectionTitle}>Produtos</span>
-
-                    <ul>
-                        <li>Alambrados</li>
-                        <li>Redes de Proteção</li>
-                        <li>Sambrite</li>
-                        <li>Tela Hexagonal</li>
-                        <li>Acessórios</li>
-                    </ul>
+        <div className={styles.footer}>
+            <div className={styles.asideL}>
+                <Link href="#">
+                    <Image src={logoimg} width={500} height={500} className={styles.logo}/>
+                </Link>
+                <div className={styles.iconsList}>
+                    <Link href="#"><Image src={facebook} width={50} height={50} className={styles.imageLink}/></Link>
+                    <Link href="#"><Image src={facebook} width={50} height={50} className={styles.imageLink}/></Link>
+                    <Link href="#"><Image src={facebook} width={50} height={50} className={styles.imageLink}/></Link>
+                    <Link href="#"><Image src={facebook} width={50} height={50} className={styles.imageLink}/></Link>
                 </div>
-                <div className={styles.sectionRight}>
-                    <span className={styles.sectionTitle}>Empresa</span>
+                
+            </div>
+            <div className={styles.asideR}>
+                <aside className={styles.linkPage}>
+                    <Link href="#"><h1>Produtos</h1></Link>
+                    <Link href="#">Alambrados</Link>
+                    <Link href="#">Redes de proteção</Link>
+                    <Link href="#">Sombrite</Link>
+                    <Link href="#">Tela Hexagonal</Link>
+                    <Link href="#">Acessórios</Link>
+                </aside>
 
-                    <ul>
-                        <li>Contate nos</li>
-                        <li>Sobre nós</li>
-                        <li>Obras Realizadas</li>
-                        <li>Testemunhas</li>
-                        <li>Avalie-nos no Google</li>
-                    </ul>
-                </div>
+                <aside className={styles.linkPage}>
+                    <Link href="#"><h1>Empresa</h1></Link>
+                    <Link href="#">Contate-nos</Link>
+                    <Link href="#">Sobre nós</Link>
+                    <Link href="#">Obras Realizadas</Link>
+                    <Link href="#">Testemunhas</Link>
+                    <Link href="#">Avalie-nos no Google</Link>
+                </aside>
             </div>
 
-            <div className={styles.lineContainer}>
-                <hr className={styles.line}/>
-            </div>
+            <hr className={styles.line}/>
 
-            <div className={styles.copy}>
-                <p>&copy; 2024 Tela Minas, Todos os direitos reservados.</p>
-            </div>
-
+            <span className={styles.copy}>&copy; 2024 Tela Minas, Todos os direitos reservados.</span>
         </div>
     )
 }
