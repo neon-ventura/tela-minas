@@ -1,81 +1,148 @@
-.footer{
-    height: 30em;
-    background: var(--graphite);
-
-    display: flex;
-    justify-content: center;
-}
-.asideL{
-    height: 80%;
-    width: 40%;
-
-    padding: 3em 2em;
+@media (min-width: 1440px){
+    .footer{
+        height: 30em;
+        background: var(--graphite);
     
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .asideL{
+        height: 80%;
+        width: 40%;
     
-    gap: 3em;
-
+        padding: 3em 2em;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        
+        gap: 3em;
+    
+    }
+    .asideR{
+        height: 80%;
+        width: 60%;
+    
+        display: flex;
+        justify-content: space-evenly;
+    
+        box-sizing: border-box;
+        padding: 3em 2em;
+    }
+    
+    
+    .logo{
+        width: 300px;
+        height: 110px;
+    }
+    
+    .iconsList{
+        width: 300px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .imageLink{
+        width: 40px;
+        height: 40px;
+    }
+    
+    .linkPage{
+        display: flex;
+        flex-direction: column;
+        gap: 0.8em;
+    }
+    
+    .linkPage h1{
+        font-size: large;
+        margin-bottom: .5em;
+        color: var(--white);
+        font-weight: 600;
+    }
+    
+    .linkPage *{
+        text-decoration: none;
+        color: var(--gray);
+        font-weight: 400;
+    }
+    
+    .copy{
+        position: absolute;
+        color: var(--gray);
+        bottom: -28em;
+    }
+    
+    .line{
+        position: absolute;
+        border: solid 1px var(--gray);
+        width: 80%;
+        opacity: 100;
+        bottom: -26em;
+    }
 }
-.asideR{
-    height: 80%;
-    width: 60%;
 
-    display: flex;
-    justify-content: space-evenly;
+@media (max-width: 1032px){
+    .footer{
+        height: 30em;
+        background-color: var(--graphite);
 
-    box-sizing: border-box;
-    padding: 3em 2em;
-}
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+    }
+    .logo{
+        height: 5em;
+        width: 12em;
+        align-self: flex-start;
+    }
 
+    .iconsList{
+        width: 220px;
+        display: flex;
+        justify-content: space-between;
+        padding: 2em 0em;
+        padding-bottom: 3em;
+    }
+    .imageLink{
+        width: 1.5em;
+        height: 1.5em;
+    }
 
-.logo{
-    width: 300px;
-    height: 110px;
-}
+    .asideR{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
 
-.iconsList{
-    width: 300px;
-    display: flex;
-    justify-content: space-around;
-}
+        margin-bottom: 1em;
+    }
+    .linkPage{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
 
-.imageLink{
-    width: 40px;
-    height: 40px;
-}
+        gap: .5em;
+    }
 
-.linkPage{
-    display: flex;
-    flex-direction: column;
-    gap: 0.8em;
-}
+    .linkPage *{
+        text-decoration: none;
+        color: var(--gray);
+        font-size: 11pt;
+    }
 
-.linkPage h1{
-    font-size: large;
-    margin-bottom: .5em;
-    color: var(--white);
-    font-weight: 600;
-}
+    .linkPage h1{
+        color: var(--white);
+        margin-bottom: 0.6em;
+    }
 
-.linkPage *{
-    text-decoration: none;
-    color: var(--gray);
-    font-weight: 400;
-}
+    .line{
+        border: .8px solid var(--gray);
+        opacity: 100;
+    }
 
-.copy{
-    position: absolute;
-    color: var(--gray);
-    bottom: -28em;
-}
-
-.line{
-    position: absolute;
-    border: solid 1px var(--gray);
-    width: 80%;
-    opacity: 100;
-    bottom: -26em;
+    .copy{
+        color: var(--gray);
+        font-size: 11pt;
+        text-align: center;
+    }
 }
