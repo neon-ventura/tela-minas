@@ -46,7 +46,7 @@ export default function Contactus(){
                     <input type="text" className={styles.input} placeholder="Ultimo Nome"/>
                     <input type="text" className={styles.input} placeholder="E-mail"/>
                     <input type="text" className={styles.input} placeholder="Número"/>
-                    <input type="text" className={styles.inputMsg} placeholder="Deixe sua mensagem"/>
+                    <textarea type="text" className={styles.inputMsg} placeholder="Deixe sua mensagem"/>
                     <button type="submit" className={styles.submit}>Enviar</button>
                 </form>
             </section>
