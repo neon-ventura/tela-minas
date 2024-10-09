@@ -1,41 +1,70 @@
-import Image from "next/image"
-import styles from './Nav.module.css'
-import logoimg from '../../../../public/nav/logo.png' // tive que fazer isso, não consegui colocar a imagem de outro jeito hahahah foi mal
+import Image from "next/image";
+import styles from './Nav.module.css';
+import logoimg from '../../../../public/nav/logo.png';
 
-export default function Nav(){
+export default function Nav() {
     return (
-        <nav className={`navbar navbar-expand-lg navbar-light`}>
-            <div className={`${styles.navbar} container-fluid`}>
-                <a className={styles.logo} href="/">
-                    <Image height={60} className={styles.logoimg}src={logoimg}/>
-                </a>
-                <button className={`${styles.toggler} navbar-toggler`} type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <Image height={50} width={50} src={"/nav/barra-de-menu.png"}/>
-                </button>
-                <div className={`collapse navbar-collapse`} id="navbarSupportedContent">
-                    <ul className={`${styles.nav_ul} navbar-nav me-auto mb-2 mb-lg-0`}>
-                        <li className="nav-item">
-                        <a className="nav-link" aria-current="page" href="#">Projetos</a>
-                        </li>
-                        <li className="nav-item">
-                        <a className="nav-link" href="/about">Sobre nós</a>
-                        </li>
-                        <li className="nav-item">
-                        <a className="nav-link" href="/contactus">Contate nos</a>
-                        </li>
-                        <li className="nav-item dropdown">
-                        <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Produtos
-                        </a>
-                        <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a className="dropdown-item" href="#">Sombreamento</a></li>
-                            <li><a className="dropdown-item" href="#">Telas Galvanizadas</a></li>
-                            <li><a className="dropdown-item" href="#">Outros</a></li>
+        <>
+            <nav className={`${styles.nav} navbar navbar-expand-lg bg-body-tertiary`}>
+                <div className={`container-fluid ${styles.nav}`}>
+                    <a className="navbar-brand" href="#"><Image height={80} width={180} src={'/nav/logo.png'} /></a>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul className="navbar-nav">
+                            <li className="nav-item">
+                                <a className="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">Features</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">Pricing</a>
+                            </li>
                         </ul>
-                        </li>
-                    </ul>
+                        <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                            Link with href
+                        </a>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                            Button with data-bs-target
+                        </button>
+
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div>
+                                    Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                                </div>
+                                <div class="dropdown mt-3">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                        Dropdown button
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Toggle top offcanvas</button>
+
+            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    ...
                 </div>
             </div>
-        </nav>
-    )
+        </>
+    );
 }
