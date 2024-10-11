@@ -70,6 +70,10 @@
         justify-content: space-around;
     }
 
+    .offcanvas_top {
+        height: 300px !important;
+    }
+
     .btn_of {
         font-size: 1em;
         padding: 20px;
