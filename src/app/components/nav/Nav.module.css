@@ -46,6 +46,9 @@
     display: flex;
 }
 
+.icons {
+    display: none;
+}
 
 @media (min-width: 720px) {
     .nav {
@@ -61,6 +64,7 @@
         background-color: transparent;
         color: black;
         padding: 0;
+        margin-left: 60px;
         border: none;
         font-size: 1.5em;
     }
@@ -82,5 +86,18 @@
     .items_pc {
         display: flex;
         flex-direction: column;
+    }
+
+    .link {
+        margin-left: 60px;
+    }
+
+    .icons {
+        display: block;
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
     }
 }

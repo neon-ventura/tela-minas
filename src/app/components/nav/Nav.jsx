@@ -177,6 +177,10 @@ export default function Nav() {
                         </div>
                     </div>
                 </div>
+                <div className={styles.icons}>
+                    <Image src={'/nav/zap_icon.png'} height={70} width={70} />
+                    <Image src={'/nav/ig_icon.png'} height={70} width={70} />
+                </div>
             </div>
 
         </>
