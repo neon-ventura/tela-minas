@@ -50,6 +50,10 @@
     display: none;
 }
 
+.products_pc {
+    font-size: 1em !important;
+}
+
 @media (min-width: 720px) {
     .nav {
         display: none;
@@ -90,10 +94,24 @@
 
     .link {
         margin-left: 60px;
+        font-size: 1em;
+    }
+
+    .products_pc {
+        font-size: 2em !important;
+    }
+
+    .btn_pc {
+        font-size: 1em;
     }
 
     .icons {
         display: block;
+        margin-left: 150px;
+    }
+
+    .icons_item {
+        margin-left: 30px;
     }
 
     .content {

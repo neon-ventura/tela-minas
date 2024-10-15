@@ -113,7 +113,7 @@ export default function Nav() {
 
                 <div class={`${styles.offcanvas_top} offcanvas offcanvas-top`} tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasTopLabel">Produtos</h5>
+                        <h5 className={`${styles.products_pc} offcanvas-title`} id="offcanvasTopLabel">Produtos</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class={`${styles.offcanvas_pc} offcanvas-body`}>
@@ -178,8 +178,8 @@ export default function Nav() {
                     </div>
                 </div>
                 <div className={styles.icons}>
-                    <Image src={'/nav/zap_icon.png'} height={70} width={70} />
-                    <Image src={'/nav/ig_icon.png'} height={70} width={70} />
+                    <Image className={styles.icons_item} src={'/nav/zap_icon.png'} height={70} width={70} />
+                    <Image className={styles.icons_item} src={'/nav/ig_icon.png'} height={70} width={70} />
                 </div>
             </div>
 

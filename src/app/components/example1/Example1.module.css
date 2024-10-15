@@ -56,10 +56,54 @@
     color: white;
 }
 
+.p {
+    text-align: left;
+}
+
 .btn2 {
     border: none;
     height: 50px;
     width: 150px;
     background-color: #4D4D4D;
     color: white;
+}
+
+@media (min-width: 720px) {
+    .h1 {
+        font-size: 5em;
+        width: 600px;
+    }
+
+    .btn1 {
+        border: none;
+        height: 100px;
+        width: 300px;
+        margin-right: 20px;
+        background-color: #cd4244;
+        color: white;
+        font-size: 2em;
+    }
+
+    .btn1:hover {
+        border-radius: 10px;
+        border: 1px solid #f6f6f6;
+        transition: 0.2s ease-out;
+        background-color: #4D4D4D;
+    }
+    
+    .btn2 {
+        border: none;
+        height: 100px;
+        width: 300px;
+        background-color: #4D4D4D;
+        color: white;
+        font-size: 2em;
+    }
+
+    .btn2:hover {
+        border-radius: 10px;
+        border: 1px solid #f6f6f6;
+        transition: 0.2s ease-out;
+        background-color: #cd4244;
+    }
 }

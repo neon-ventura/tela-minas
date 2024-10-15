@@ -34,12 +34,85 @@
     /* Desfaz a rotação dentro do quadrado */
 }
 
+.p_phone {
+    color: #fff;
+    width: 150px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.4em;
+}
+
 .p {
     color: #fff;
     width: 150px;
     text-align: center;
     font-weight: 600;
     font-size: 1.4em;
+}
+
+.icon_pc {
+    display: none;
+}
+
+.p_pc {
+    display: none;
+}
+
+@media (min-width: 720px) {
+    .values {
+        height: 100%;
+    }
+
+    .diamond {
+        width: 300px;
+        height: 300px;
+        background-color: #fff;
+        border: 4px solid var(--red);
+        position: relative;
+        transform: rotate(45deg);
+        /* Rotaciona o quadrado */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .icon_pc {
+        display: block;
+        font-size: 24px;
+        color: white;
+        transform: rotate(-45deg);
+    }
+
+    .p_pc {
+        display: block;
+    }
+
+    .section {
+        padding-bottom: 300px;
+        margin-top: 200px;
+    }
+
+    .p {
+        font-size: 4em;
+        width: 100;
+    }
+
+    .p_phone {
+        display: none;
+    }
+
+    .p_pc {
+        color: #fff;
+        width: 400px;
+        text-align: center;
+        text-align: center;
+        font-weight: 600;
+        font-size: 4em;
+    }
 }
 
 /* Products */
@@ -80,6 +153,75 @@
     background-color: var(--red);
     color: #fff;
     margin-bottom: 60px;
+}
+
+.tela_icon_pc {
+    display: none;
+}
+
+.img_product_pc {
+    display: none;
+}
+
+@media (min-width: 720px) {
+    .h1_product {
+        font-size: 5em;
+        margin-bottom: 100px;
+        margin-top: 50px;
+    }
+
+    .img_product {
+        display: none;
+    }
+
+    .img_product_pc {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        border: 2px solid var(--red);
+        border-radius: 10px;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.500);
+        margin: 20px;
+    }
+
+    .img_product_pc:hover {
+        transform: scale(2, 1);
+        cursor: pointer;
+        border: 3px solid black;
+    }
+
+    .tela_icon {
+        display: none;
+    }
+
+    .tela_icon_pc {
+        display: inline;
+    }
+
+
+
+    .section_card {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .btn_product {
+        padding: 15px 0px;
+        width: 300px;
+        height: 80px;
+        border: none;
+        background-color: var(--red);
+        color: #fff;
+        margin: 60px;
+        margin-bottom: 90px;
+        font-size: 2em;
+    }
+
+    .btn_product:hover {
+        border-radius: 10px;
+        border: 2px solid var(--graphite);
+        transition: 2s ease;
+    }
 }
 
 /* About */
@@ -125,8 +267,54 @@
     margin-bottom: 40px;
 }
 
+.video_about_pc {
+    display: none;
+}
+
 .h2_data {
     font-size: 2em;
+}
+
+@media (min-width: 720px) {
+
+    .about {
+        height: 100%;
+    }
+
+    .h1_about {
+        font-size: 5em;
+    }
+
+    .h2_data {
+        font-size: 4em;
+        margin: 50px;
+    }
+
+    .sections_about {
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .video_about {
+        display: none;
+    }
+
+    .video_about_pc {
+        display: block;
+    }
+
+    .btn_about {
+        width: 400px;
+        height: 100px;
+        font-size: 2em;
+    }
+
+    .btn_about:hover {
+        border-radius: 10px;
+        border: 1px solid #fff;
+    }
 }
 
 /* Testimonials */
