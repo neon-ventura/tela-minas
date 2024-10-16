@@ -13,7 +13,8 @@ export default function Example1() {
                         <button className={styles.btn2}>Contate-nos</button>
                     </div>
                 </div>
-                <video className={styles.video} src="/home/alambrado_1.mp4" loop autoPlay muted></video>
+                <video className={styles.video} src="/example/telaminas_phone.mp4" loop autoPlay muted></video>
+                <video className={styles.video_pc} src="/example/telaminas_pc.mp4" loop autoPlay muted></video>
             </header>
         </>
     )

@@ -1,21 +1,34 @@
 .header {
     position: relative;
     width: 100%;
-    height: 80vh; /* Faz com que a header ocupe a altura total da tela */
-    overflow: hidden; /* Garante que o conteúdo fora da área visível seja cortado */
+    height: 80vh;
+    /* Faz com que a header ocupe a altura total da tela */
+    overflow: hidden;
+    /* Garante que o conteúdo fora da área visível seja cortado */
 }
 
 .video {
     position: absolute;
     top: 50%;
     left: 50%;
-    min-width: 100%; /* Define o vídeo para cobrir a largura total */
-    min-height: 100%; /* Define o vídeo para cobrir a altura total */
-    width: auto; /* Faz com que a largura se ajuste automaticamente */
-    height: auto; /* Faz com que a altura se ajuste automaticamente */
-    z-index: 0; /* Mantém o vídeo atrás do conteúdo */
-    transform: translate(-50%, -50%); /* Centraliza o vídeo */
-    object-fit: cover; /* Faz o vídeo se comportar como cover, cortando se necessário */
+    min-width: 100%;
+    /* Define o vídeo para cobrir a largura total */
+    min-height: 100%;
+    /* Define o vídeo para cobrir a altura total */
+    width: auto;
+    /* Faz com que a largura se ajuste automaticamente */
+    height: auto;
+    /* Faz com que a altura se ajuste automaticamente */
+    z-index: 0;
+    /* Mantém o vídeo atrás do conteúdo */
+    transform: translate(-50%, -50%);
+    /* Centraliza o vídeo */
+    object-fit: cover;
+    /* Faz o vídeo se comportar como cover, cortando se necessário */
+}
+
+.video_pc {
+    display: none;
 }
 
 .overlay {
@@ -90,7 +103,7 @@
         transition: 0.2s ease-out;
         background-color: #4D4D4D;
     }
-    
+
     .btn2 {
         border: none;
         height: 100px;
@@ -105,5 +118,14 @@
         border: 1px solid #f6f6f6;
         transition: 0.2s ease-out;
         background-color: #cd4244;
+    }
+
+    .video {
+        display: none;
+    }
+
+    .video_pc {
+        display: inline;
+        width: 100vw;
     }
 }
