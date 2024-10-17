@@ -97,12 +97,21 @@
         font-size: 1em;
     }
 
+    .link:hover {
+        color: #CB4243 !important;
+    }
+
     .products_pc {
         font-size: 2em !important;
     }
 
     .btn_pc {
         font-size: 1em;
+    }
+
+    .btn_pc:hover {
+        background-color: transparent;
+        color: #CB4243;
     }
 
     .icons {

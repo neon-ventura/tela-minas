@@ -126,6 +126,6 @@
 
     .video_pc {
         display: inline;
-        width: 100vw;
+        width: 100%;
     }
 }

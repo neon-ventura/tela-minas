@@ -332,6 +332,37 @@
 .img_testimonials {
     border-radius: 10px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.500);
+    background-attachment: fixed;
+}
+
+.testimonials_pc {
+    display: none;
+}
+
+@media (min-width: 720px) {
+    .testimonials_pc {
+        display: block;
+    }
+
+    .cardWtxt {
+        width: 100%;
+        margin-bottom: 300px;
+    }
+
+    .cardWtxt {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .txt_testimonials {
+        width: 400px;
+        font-size: 1.5em;
+    }
+
+    .testimonials {
+        display: none;
+    }
 }
 
 /* Brands */
@@ -360,6 +391,30 @@
     display: flex;
     justify-content: space-around;
     margin-bottom: 80px;
+}
+
+.img_brand_pc {
+    display: none;
+}
+
+.img_brand {
+    display: block;
+}
+
+@media (min-width: 720px) {
+    .text_center {
+        font-size: 2em;
+    }
+
+    .img_brand_pc {
+        display: block;
+    }
+
+    .img_brand {
+        display: none;
+    }
+
+
 }
 
 /* Local */
@@ -392,6 +447,56 @@
 
 .informations_p {
     width: 250px;
+}
+
+.informations_pc {
+    display: none;
+}
+
+@media (min-width: 720px) {
+    .map {
+        width: 600px;
+        border-radius: 20px;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.415);
+    }
+
+    .local {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 200px;
+    }
+
+    .informations {
+        display: none;
+    }
+
+    .container_qr {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .qr_p {
+        font-size: 1em !important;
+    }
+
+    .informations_pc {
+        display: block;
+        margin-bottom: 100px;
+        margin-top: 100px;
+    }
+
+    .informations_p {
+        font-size: 1.5em !important;
+        width: 300px;
+    }
+
+    .informations_item {
+        justify-content: space-evenly;
+    }
+
+    .informations_item_zap {
+        justify-content: space-evenly;
+    }
 }
 
 /* Qr Code */
