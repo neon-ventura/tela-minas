@@ -15,13 +15,13 @@ export default function Nav() {
                         <div className="collapse navbar-collapse" id="navbarNavDropdown">
                             <ul className="navbar-nav">
                                 <li className="nav-item">
-                                    <a className={`${styles.link} nav-link active`} aria-current="page" href="#">Pagina inicial</a>
+                                    <a className={`${styles.link} nav-link active`} aria-current="page" href="/">Pagina inicial</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className={`${styles.link} nav-link active`} href="#">Sobre nós</a>
+                                    <a className={`${styles.link} nav-link active`} href="/about">Sobre nós</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className={`${styles.link} nav-link active`} href="#">Contate nos</a>
+                                    <a className={`${styles.link} nav-link active`} href="/contactus">Contate nos</a>
                                 </li>
                                 <button class={`${styles.btn_mobile} btn btn-primary`} type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                                     Produtos
@@ -97,13 +97,13 @@ export default function Nav() {
                         <div className="collapse navbar-collapse" id="navbarNavDropdown">
                             <ul className="navbar-nav">
                                 <li className="nav-item">
-                                    <a className={`${styles.link} nav-link active`} aria-current="page" href="#">Pagina inicial</a>
+                                    <a className={`${styles.link} nav-link active`} aria-current="page" href="/">Pagina inicial</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className={`${styles.link} nav-link active`} href="#">Sobre nós</a>
+                                    <a className={`${styles.link} nav-link active`} href="/about">Sobre nós</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className={`${styles.link} nav-link active`} href="#">Contate nos</a>
+                                    <a className={`${styles.link} nav-link active`} href="/contactus">Contate nos</a>
                                 </li>
                             </ul>
                         </div>

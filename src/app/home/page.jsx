@@ -71,8 +71,8 @@ export default function Home() {
             <div className={styles.about}>
                 <h1 className={styles.h1_about}>Sobre nós</h1>
                 <div className={styles.sections_about}>
-                    <Image data-aos="flip-left" className={styles.video_about} src={"/home/video.png"} height={200} width={350} />
-                    <Image data-aos="flip-left" className={styles.video_about_pc} src={"/home/video.png"} height={400} width={650} />
+                    <Image data-aos="flip-left" className={styles.video_about} src={"/about/img1.jpeg"} height={220} width={350} />
+                    <Image data-aos="flip-left" className={styles.video_about_pc} src={"/about/img1.jpeg"} height={600} width={650} />
                     <div className={styles.section_data}>
                         <div className={styles.data}>
                             <h2 data-aos="zoom-out" className={styles.h2_data}>+1000</h2>
@@ -188,7 +188,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div data-aos="fade-up" className={styles.container_qr}>
+                <div data-aos="fade-up" className={styles.container_qr_pc}>
                     <div className={styles.text}>
                         <p className={styles.qr_p}>Sua opinião é importante! <br /> Avalie-nos no Google.</p>
                         <p className={styles.qr_p}> Escaneie o QR code <br /> ou <br /> Clique Aqui</p>
