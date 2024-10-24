@@ -43,7 +43,7 @@ export default function Footer(){
             </div>
 
             <hr className={styles.line}/>
-
+            
             <span className={styles.copy}>&copy; 2024 Tela Minas, Todos os direitos reservados.</span>
         </div>
     )
