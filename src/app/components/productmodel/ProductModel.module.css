@@ -1,5 +1,69 @@
 .main{
-    height: 100vh;
+    height: auto;
+}
+
+@media (min-width: 1280px){
+    .main{
+        padding: 5em 6em;
+
+        display: grid;
+        justify-items: center;
+        align-items: center;
+
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+
+        grid-template-areas: "image name"
+                             "description description"
+                             "carac carac";
+    }
+
+    .productName{
+        grid-area: name;
+
+        padding: 0.5em 1.5em;
+        margin: 0;
+    }
+
+    .imgDiamond {
+        transform: rotate(45deg);
+        overflow: hidden;
+        width: 500px;
+        height: 500px;
+        margin: -76px;
+    }
+
+    .diamond{
+        grid-area: image;
+
+        transform: rotate(-45deg);
+        width: 350px;
+        height: 350px;
+
+        border: 4px solid var(--red);
+        overflow: hidden;
+    }
+
+    .description{
+        grid-area: description;
+
+        margin-top: 6em;
+        font-size: 1.5em;
+
+        justify-self: start;
+    }
+
+    .caracList{
+        grid-area: carac;
+    }
+
+    .caracListTitle{
+        font-size: 1.5em;
+        margin-bottom: 1em;
+    }
+    .caracListItem{
+        font-size: 1.3em;
+    }
 }
 
 @media (max-width: 1032px){
