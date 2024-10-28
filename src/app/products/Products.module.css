@@ -42,21 +42,34 @@
 
 .card {
     display: flex;
+    flex-direction: column;
     align-items: center;
     width: 100%;
-    justify-content: space-between;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
+}
+
+.txt_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 30px;
 }
 
 .title_product {
-    font-size: 1.2em;
+    font-size: 2em;
+}
+
+.title_product_alam {
+    font-size: 1.8em;
 }
 
 .btn1 {
     background-color: #cd4244;
     border: none;
     padding: 10px;
-    width: 100px;
+    width: 200px;
     margin: 5px;
     color: white;
 }
@@ -65,7 +78,7 @@
     background-color: #4d4d4d;
     border: none;
     padding: 10px;
-    width: 100px;
+    width: 200px;
     margin: 5px;
     color: white;
 }
