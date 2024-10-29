@@ -82,3 +82,58 @@
     margin: 5px;
     color: white;
 }
+
+@media (min-width: 720px) {
+    .content {
+        display: none;
+    }
+
+    .content_pc {
+        display: flex;
+    }
+
+    .left {
+        width: 30%;
+        background-color: #cd4244;
+        height: 100px;
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        border-radius: 0px 20px;
+    }
+
+    .right {
+        width: 70%;
+    }
+
+    .title_product {
+        font-size: 2.7em;
+    }
+
+    .title_product_alam {
+        font-size: 2.7em;
+    }
+
+    .btn1 {
+        padding: 20px;
+        width: 300px;
+        font-size: 1.8em;
+    }
+
+    .btn1:hover {
+        background-color: #4d4d4d;
+        transition: 0.5s;
+        border: 1px solid #cd4244;
+    }
+    
+    .btn2 {
+        padding: 20px;
+        width: 300px;
+        font-size: 1.8em;
+    }
+
+    .btn2:hover {
+        background-color: #cd4244;
+        transition: 0.5s;
+    }
+}

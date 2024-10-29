@@ -23,63 +23,63 @@ export default function Nav() {
                                 <li className="nav-item">
                                     <a className={`${styles.link} nav-link active`} href="/contactus">Contate nos</a>
                                 </li>
-                                <button class={`${styles.btn_mobile} btn btn-primary`} type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                <button className={`${styles.btn_mobile} btn btn-primary`} type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                                     Produtos
                                 </button>
-                                <div class="offcanvas offcanvas-start" tabindex="1000" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                                    <div class="offcanvas-header">
-                                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Produtos</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                <div className="offcanvas offcanvas-start" tabIndex="1000" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                    <div className="offcanvas-header">
+                                        <h5 className="offcanvas-title" id="offcanvasExampleLabel">Produtos</h5>
+                                        <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                     </div>
-                                    <div class={`${styles.offcanvas} offcanvas-body`}>
-                                        <button class={`${styles.btn_of} btn btn-secondary`} type="button">
+                                    <div className={`${styles.offcanvas} offcanvas-body`}>
+                                        <button className={`${styles.btn_of} btn btn-secondary`} type="button">
                                             Alambrado Galvanizado
                                         </button>
-                                        <button class={`${styles.btn_of} btn btn-secondary`} type="button">
+                                        <button className={`${styles.btn_of} btn btn-secondary`} type="button">
                                             Alambrado Revestido
                                         </button>
-                                        <div class={`${styles.drop} dropdown mt-3`}>
-                                            <button class={`${styles.btn_of} btn btn-secondary dropdown-toggle`} type="button" data-bs-toggle="dropdown">
+                                        <div className={`${styles.drop} dropdown mt-3`}>
+                                            <button className={`${styles.btn_of} btn btn-secondary dropdown-toggle`} type="button" data-bs-toggle="dropdown">
                                                 Telas hexagonal
                                             </button>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#">Galinheiro </a></li>
-                                                <li><a class="dropdown-item" href="#">Pinteiro </a></li>
-                                                <li><a class="dropdown-item" href="#">Viveiro </a></li>
+                                            <ul className="dropdown-menu">
+                                                <li><a className="dropdown-item" href="#">Galinheiro </a></li>
+                                                <li><a className="dropdown-item" href="#">Pinteiro </a></li>
+                                                <li><a className="dropdown-item" href="#">Viveiro </a></li>
                                             </ul>
                                         </div>
-                                        <button class={`${styles.btn_of} btn btn-secondary`} type="button">
+                                        <button className={`${styles.btn_of} btn btn-secondary`} type="button">
                                             Tela Soldada
                                         </button>
-                                        <button class={`${styles.btn_of} btn btn-secondary`} type="button">
+                                        <button className={`${styles.btn_of} btn btn-secondary`} type="button">
                                             Tela industrial ondulada
                                         </button>
-                                        <div class={`${styles.drop} dropdown mt-3`}>
+                                        <div className={`${styles.drop} dropdown mt-3`}>
                                             <button className={`${styles.btn_of} btn btn-secondary dropdown-toggle`} type="button" data-bs-toggle="dropdown">
                                                 Telas mosqueteiros
                                             </button>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#">Plástico </a></li>
-                                                <li><a class="dropdown-item" href="#">Fibra de vidro  </a></li>
-                                                <li><a class="dropdown-item" href="#">Alumínio  </a></li>
+                                            <ul className="dropdown-menu">
+                                                <li><a className="dropdown-item" href="#">Plástico </a></li>
+                                                <li><a className="dropdown-item" href="#">Fibra de vidro  </a></li>
+                                                <li><a className="dropdown-item" href="#">Alumínio  </a></li>
                                             </ul>
                                         </div>
-                                        <button class={`${styles.btn_of} btn btn-secondary`} type="button">
+                                        <button className={`${styles.btn_of} btn btn-secondary`} type="button">
                                             Sombreamento
                                         </button>
-                                        <button class={`${styles.btn_of} btn btn-secondary`} type="button">
+                                        <button className={`${styles.btn_of} btn btn-secondary`} type="button">
                                             Chapa Moeda
                                         </button>
-                                        <button class={`${styles.btn_of} btn btn-secondary`} type="button">
+                                        <button className={`${styles.btn_of} btn btn-secondary`} type="button">
                                             Concertina
                                         </button>
-                                        <button class={`${styles.btn_of} btn btn-secondary`} type="button">
+                                        <button className={`${styles.btn_of} btn btn-secondary`} type="button">
                                             Chapa expandida
                                         </button>
-                                        <button class={`${styles.btn_of} btn btn-secondary`} type="button">
+                                        <button className={`${styles.btn_of} btn btn-secondary`} type="button">
                                             Telas peneiras
                                         </button>
-                                        <button class={`${styles.btn_of} btn btn-secondary`} type="button">
+                                        <button className={`${styles.btn_of} btn btn-secondary`} type="button">
                                             Rede de proteção
                                         </button>
                                     </div>
@@ -111,67 +111,67 @@ export default function Nav() {
                 </nav>
                 <button className={`${styles.btn_pc} btn btn-primary`} type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Produtos</button>
 
-                <div class={`${styles.offcanvas_top} offcanvas offcanvas-top`} tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-                    <div class="offcanvas-header">
+                <div className={`${styles.offcanvas_top} offcanvas offcanvas-top`} tabIndex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                    <div className="offcanvas-header">
                         <h5 className={`${styles.products_pc} offcanvas-title`} id="offcanvasTopLabel">Produtos</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                    <div class={`${styles.offcanvas_pc} offcanvas-body`}>
+                    <div className={`${styles.offcanvas_pc} offcanvas-body`}>
                         <div className={styles.items_pc}>
-                            <div class={`${styles.drop} dropdown mt-3`}>
-                                <button class={`${styles.btn_of} btn btn-secondary dropdown-toggle`} type="button" data-bs-toggle="dropdown">
+                            <div className={`${styles.drop} dropdown mt-3`}>
+                                <button className={`${styles.btn_of} btn btn-secondary dropdown-toggle`} type="button" data-bs-toggle="dropdown">
                                     Telas hexagonal
                                 </button>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Galinheiro </a></li>
-                                    <li><a class="dropdown-item" href="#">Pinteiro </a></li>
-                                    <li><a class="dropdown-item" href="#">Viveiro </a></li>
+                                <ul className="dropdown-menu">
+                                    <li><a className="dropdown-item" href="#">Galinheiro </a></li>
+                                    <li><a className="dropdown-item" href="#">Pinteiro </a></li>
+                                    <li><a className="dropdown-item" href="#">Viveiro </a></li>
                                 </ul>
                             </div>
-                            <button class={`${styles.btn_of} btn btn-secondary`} type="button">
+                            <button className={`${styles.btn_of} btn btn-secondary`} type="button">
                                 Alambrado Galvanizado
                             </button>
-                            <button class={`${styles.btn_of} btn btn-secondary`} type="button">
+                            <button className={`${styles.btn_of} btn btn-secondary`} type="button">
                                 Alambrado Revestido
                             </button>
                         </div>
                         <div className={styles.items_pc}>
-                            <div class={`${styles.drop} dropdown mt-3`}>
+                            <div className={`${styles.drop} dropdown mt-3`}>
                                 <button className={`${styles.btn_of} btn btn-secondary dropdown-toggle`} type="button" data-bs-toggle="dropdown">
                                     Telas mosqueteiros
                                 </button>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Plástico </a></li>
-                                    <li><a class="dropdown-item" href="#">Fibra de vidro  </a></li>
-                                    <li><a class="dropdown-item" href="#">Alumínio  </a></li>
+                                <ul className="dropdown-menu">
+                                    <li><a className="dropdown-item" href="#">Plástico </a></li>
+                                    <li><a className="dropdown-item" href="#">Fibra de vidro  </a></li>
+                                    <li><a className="dropdown-item" href="#">Alumínio  </a></li>
                                 </ul>
                             </div>
-                            <button class={`${styles.btn_of} btn btn-secondary`} type="button">
+                            <button className={`${styles.btn_of} btn btn-secondary`} type="button">
                                 Tela Soldada
                             </button>
-                            <button class={`${styles.btn_of} btn btn-secondary`} type="button">
+                            <button className={`${styles.btn_of} btn btn-secondary`} type="button">
                                 Tela industrial ondulada
                             </button>
                         </div>
                         <div className={styles.items_pc}>
-                            <button class={`${styles.btn_of} btn btn-secondary`} type="button">
+                            <button className={`${styles.btn_of} btn btn-secondary`} type="button">
                                 Sombreamento
                             </button>
-                            <button class={`${styles.btn_of} btn btn-secondary`} type="button">
+                            <button className={`${styles.btn_of} btn btn-secondary`} type="button">
                                 Chapa Moeda
                             </button>
-                            <button class={`${styles.btn_of} btn btn-secondary`} type="button">
+                            <button className={`${styles.btn_of} btn btn-secondary`} type="button">
                                 Concertina
                             </button>
                         </div>
                         <div className={styles.items_pc}>
-                            <button class={`${styles.btn_of} btn btn-secondary`} type="button">
+                            <button className={`${styles.btn_of} btn btn-secondary`} type="button">
                                 Chapa expandida
                             </button>
-                            <button class={`${styles.btn_of} btn btn-secondary`} type="button">
+                            <button className={`${styles.btn_of} btn btn-secondary`} type="button">
                                 Telas peneiras
                             </button>
-                            <button class={`${styles.btn_of} btn btn-secondary`} type="button">
+                            <button className={`${styles.btn_of} btn btn-secondary`} type="button">
                                 Rede de proteção
                             </button>
                         </div>
