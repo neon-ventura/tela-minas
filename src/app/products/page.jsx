@@ -36,16 +36,9 @@ export default function Products() {
                         <button className={`${styles.btn_of} btn btn-secondary`} type="button">
                             <a href="/products/alambradorevestido">Alambrado Revestido</a>
                         </button>
-                        <div className={`${styles.drop} dropdown mt-3`}>
-                            <button className={`${styles.btn_of} btn btn-secondary dropdown-toggle`} type="button" data-bs-toggle="dropdown">
-                                Telas hexagonal
-                            </button>
-                            <ul className="dropdown-menu">
-                                <li><a className="dropdown-item" href="#">Galinheiro </a></li>
-                                <li><a className="dropdown-item" href="#">Pinteiro </a></li>
-                                <li><a className="dropdown-item" href="#">Viveiro </a></li>
-                            </ul>
-                        </div>
+                        <button className={`${styles.btn_of} btn btn-secondary`} type="button">
+                            <a href="/products/exgonal">Tela exagonal</a>
+                        </button>
                         <button className={`${styles.btn_of} btn btn-secondary`} type="button">
                             <a href="/products/soldada">Tela Soldada</a>
                         </button>
@@ -75,7 +68,7 @@ export default function Products() {
                             <a href="/products/chapaexpandida">Chapa expandida</a>
                         </button>
                         <button className={`${styles.btn_of} btn btn-secondary`} type="button">
-                            <a href="/products/telapeneira">Telas peneiras</a>
+                            <a href="/products/telapeneira">Tela peneiras</a>
                         </button>
                         <button className={`${styles.btn_of} btn btn-secondary`} type="button">
                             <a href="/products/rededeprotecao">Rede de proteção</a>
@@ -233,37 +226,72 @@ export default function Products() {
                 <div className={styles.left}>
                     <h1 className={styles.title_list}>Filtrar</h1>
                     <ul className={styles.list}>
-                        <li className={styles.li}>Alambrado Galvanizado</li>
-                        <li className={styles.li}>Alambrado Revestido</li>
-                        <li className={styles.li}>Gradil</li>
-                        <li className={styles.li}>Telas Hexagonal
+                        <a href="/products">
+                            <li className={styles.li}>Todos</li>
+                        </a>
+                        <a href="/products/alambrado">
+                            <li className={styles.li}>Alambrado Galvanizado</li>
+                        </a>
+                        <a href="/products/alambradorevestido">
+                            <li className={styles.li}>Alambrado Revestido</li>
+                        </a>
+                        <a href="/products/gradil">
+                            <li className={styles.li}>Gradil</li>
+                        </a>
+                        <li className={styles.li}><a href="/products/exagonal">Tela Hexagonal</a>
+                            
+                        </li>
+                        <a href="/products/soldada">
+                            <li className={styles.li}>Tela Soldada</li>
+                        </a>
+                        <a href="ondulada">
+                            <li className={styles.li}>Tela industrial ondulada</li>
+                        </a>
+                        <li className={styles.li}><a href="/products/mosqueteiro">Telas Mosqueteiros</a>
                             <ul className={styles.sublist}>
-                                <li className={styles.subLi}>Galinheiro</li>
-                                <li className={styles.subLi}>Pinteiro</li>
-                                <li className={styles.subLi}>Viveiro</li>
+                                <a href="/products/mosqueteiro/plastico">
+                                    <li className={styles.subLi}>Plástico</li>
+                                </a>
+                                <a href="/products/mosqueteiro/vidro">
+                                    <li className={styles.subLi}>Fibra de vidro</li>
+                                </a>
+                                <a href="/products/mosqueteiro/aluminio">
+                                    <li className={styles.subLi}>Alumínio</li>
+                                </a>
                             </ul>
                         </li>
-                        <li className={styles.li}>Tela Soldada</li>
-                        <li className={styles.li}>Tela industrial ondulada</li>
-                        <li className={styles.li}>Telas Mosqueteiros
+                        <a href="/products/sombreamento">
+                            <li className={styles.li}>Sombreamento</li>
+                        </a>
+                        <a href="/products/chapamoeda">
+                            <li className={styles.li}>Chapa Moeda</li>
+                        </a>
+                        <a href="/products/concertina">
+                            <li className={styles.li}>Concertina</li>
+                        </a>
+                        <a href="/products/telapeneira">
+                            <li className={styles.li}>Tela Peneira</li>
+                        </a>
+                        <a href="/products/rededeprotecao">
+                            <li className={styles.li}>Rede de Proteção</li>
+                        </a>
+                        <li className={styles.li}><a href="/products/acessorios">Acessórios</a>
                             <ul className={styles.sublist}>
-                                <li className={styles.subLi}>Plástico</li>
-                                <li className={styles.subLi}>Fibra e vidro</li>
-                                <li className={styles.subLi}>Alumínio</li>
-                            </ul>
-                        </li>
-                        <li className={styles.li}>Sombreamento</li>
-                        <li className={styles.li}>Chapa Moeda</li>
-                        <li className={styles.li}>Concertina</li>
-                        <li className={styles.li}>Tela Peneira</li>
-                        <li className={styles.li}>Rede de Proteção</li>
-                        <li className={styles.li}>Acessórios
-                            <ul className={styles.sublist}>
-                                <li className={styles.subLi}>Arame Liso</li>
-                                <li className={styles.subLi}>Arame Farpado</li>
-                                <li className={styles.subLi}>Prego</li>
-                                <li className={styles.subLi}>Grampo</li>
-                                <li className={styles.subLi}>Luva</li>
+                                <a href="/products/acessorios/arameliso">
+                                    <li className={styles.subLi}>Arame Liso</li>
+                                </a>
+                                <a href="/products/acessorios/aramefarpado">
+                                    <li className={styles.subLi}>Arame Farpado</li>
+                                </a>
+                                <a href="/products/acessorios/prego">
+                                    <li className={styles.subLi}>Prego</li>
+                                </a>
+                                <a href="/products/acessorios/grampo">
+                                    <li className={styles.subLi}>Grampo</li>
+                                </a>
+                                <a href="/products/acessorios/luva">
+                                    <li className={styles.subLi}>Luva</li>
+                                </a>
                             </ul>
                         </li>
                     </ul>

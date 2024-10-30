@@ -84,8 +84,41 @@ export default function Acessorios() {
                 </div>
                 <h1 className={styles.title}>Acessórios</h1>
                 <div data-aos="fade-up" className={styles.card}>
-                    <Image className={styles.img} src={'/products/acessorios.jpeg'} width={300} height={300} />
+                    <Image className={styles.img} src={'/products/arame-liso.webp'} width={300} height={300} />
                     <div className={styles.txt_section}>
+                        <p className={styles.title_product}>Arame Liso</p>
+                        <button className={styles.btn1}>Comprar</button>
+                        <button className={styles.btn2}>Sobre</button>
+                    </div>
+                </div>
+                <div data-aos="fade-up" className={styles.card}>
+                    <Image className={styles.img} src={'/products/arame-farpado.jpeg'} width={300} height={300} />
+                    <div className={styles.txt_section}>
+                        <p className={styles.title_product}>Arame Farpado</p>
+                        <button className={styles.btn1}>Comprar</button>
+                        <button className={styles.btn2}>Sobre</button>
+                    </div>
+                </div>
+                <div data-aos="fade-up" className={styles.card}>
+                    <Image className={styles.img} src={'/products/prego.png'} width={300} height={300} />
+                    <div className={styles.txt_section}>
+                        <p className={styles.title_product}>Prego</p>
+                        <button className={styles.btn1}>Comprar</button>
+                        <button className={styles.btn2}>Sobre</button>
+                    </div>
+                </div>
+                <div data-aos="fade-up" className={styles.card}>
+                    <Image className={styles.img} src={'/products/grampo.jpg'} width={300} height={300} />
+                    <div className={styles.txt_section}>
+                        <p className={styles.title_product}>Grampo</p>
+                        <button className={styles.btn1}>Comprar</button>
+                        <button className={styles.btn2}>Sobre</button>
+                    </div>
+                </div>
+                <div data-aos="fade-up" className={styles.card}>
+                    <Image className={styles.img} src={'/products/luva.webp'} width={300} height={300} />
+                    <div className={styles.txt_section}>
+                        <p className={styles.title_product}>Luva</p>
                         <button className={styles.btn1}>Comprar</button>
                         <button className={styles.btn2}>Sobre</button>
                     </div>
@@ -99,37 +132,72 @@ export default function Acessorios() {
                 <div className={styles.left}>
                     <h1 className={styles.title_list}>Filtrar</h1>
                     <ul className={styles.list}>
-                        <li className={styles.li}>Alambrado Galvanizado</li>
-                        <li className={styles.li}>Alambrado Revestido</li>
-                        <li className={styles.li}>Gradil</li>
-                        <li className={styles.li}>Telas Hexagonal
+                        <a href="/products">
+                            <li className={styles.li}>Todos</li>
+                        </a>
+                        <a href="/products/alambrado">
+                            <li className={styles.li}>Alambrado Galvanizado</li>
+                        </a>
+                        <a href="/products/alambradorevestido">
+                            <li className={styles.li}>Alambrado Revestido</li>
+                        </a>
+                        <a href="/products/gradil">
+                            <li className={styles.li}>Gradil</li>
+                        </a>
+                        <li className={styles.li}><a href="/products/exagonal">Tela Hexagonal</a>
+
+                        </li>
+                        <a href="/products/soldada">
+                            <li className={styles.li}>Tela Soldada</li>
+                        </a>
+                        <a href="ondulada">
+                            <li className={styles.li}>Tela industrial ondulada</li>
+                        </a>
+                        <li className={styles.li}><a href="/products/mosqueteiro">Telas Mosqueteiros</a>
                             <ul className={styles.sublist}>
-                                <li className={styles.subLi}>Galinheiro</li>
-                                <li className={styles.subLi}>Pinteiro</li>
-                                <li className={styles.subLi}>Viveiro</li>
+                                <a href="/products/mosqueteiro/plastico">
+                                    <li className={styles.subLi}>Plástico</li>
+                                </a>
+                                <a href="/products/mosqueteiro/vidro">
+                                    <li className={styles.subLi}>Fibra de vidro</li>
+                                </a>
+                                <a href="/products/mosqueteiro/aluminio">
+                                    <li className={styles.subLi}>Alumínio</li>
+                                </a>
                             </ul>
                         </li>
-                        <li className={styles.li}>Tela Soldada</li>
-                        <li className={styles.li}>Tela industrial ondulada</li>
-                        <li className={styles.li}>Telas Mosqueteiros
+                        <a href="/products/sombreamento">
+                            <li className={styles.li}>Sombreamento</li>
+                        </a>
+                        <a href="/products/chapamoeda">
+                            <li className={styles.li}>Chapa Moeda</li>
+                        </a>
+                        <a href="/products/concertina">
+                            <li className={styles.li}>Concertina</li>
+                        </a>
+                        <a href="/products/telapeneira">
+                            <li className={styles.li}>Tela Peneira</li>
+                        </a>
+                        <a href="/products/rededeprotecao">
+                            <li className={styles.li}>Rede de Proteção</li>
+                        </a>
+                        <li className={styles.li}><a href="/products/acessorios">Acessórios</a>
                             <ul className={styles.sublist}>
-                                <li className={styles.subLi}>Plástico</li>
-                                <li className={styles.subLi}>Fibra e vidro</li>
-                                <li className={styles.subLi}>Alumínio</li>
-                            </ul>
-                        </li>
-                        <li className={styles.li}>Sombreamento</li>
-                        <li className={styles.li}>Chapa Moeda</li>
-                        <li className={styles.li}>Concertina</li>
-                        <li className={styles.li}>Tela Peneira</li>
-                        <li className={styles.li}>Rede de Proteção</li>
-                        <li className={styles.li}>Acessórios
-                            <ul className={styles.sublist}>
-                                <li className={styles.subLi}>Arame Liso</li>
-                                <li className={styles.subLi}>Arame Farpado</li>
-                                <li className={styles.subLi}>Prego</li>
-                                <li className={styles.subLi}>Grampo</li>
-                                <li className={styles.subLi}>Luva</li>
+                                <a href="/products/acessorios/arameliso">
+                                    <li className={styles.subLi}>Arame Liso</li>
+                                </a>
+                                <a href="/products/acessorios/aramefarpado">
+                                    <li className={styles.subLi}>Arame Farpado</li>
+                                </a>
+                                <a href="/products/acessorios/prego">
+                                    <li className={styles.subLi}>Prego</li>
+                                </a>
+                                <a href="/products/acessorios/grampo">
+                                    <li className={styles.subLi}>Grampo</li>
+                                </a>
+                                <a href="/products/acessorios/luva">
+                                    <li className={styles.subLi}>Luva</li>
+                                </a>
                             </ul>
                         </li>
                     </ul>
@@ -138,8 +206,41 @@ export default function Acessorios() {
                 <div className={styles.right}>
                     <h1 className={styles.title}>Acessórios</h1>
                     <div data-aos="fade-up" className={styles.card}>
-                        <Image className={styles.img} src={'/products/acessorios.jpeg'} width={400} height={400} />
+                        <Image className={styles.img} src={'/products/arame-liso.webp'} width={400} height={400} />
                         <div className={styles.txt_section}>
+                            <p className={styles.title_product}>Arame Liso</p>
+                            <button className={styles.btn1}>Comprar</button>
+                            <button className={styles.btn2}>Sobre</button>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" className={styles.card}>
+                        <Image className={styles.img} src={'/products/arame-farpado.jpeg'} width={400} height={400} />
+                        <div className={styles.txt_section}>
+                            <p className={styles.title_product}>Arame Farpado</p>
+                            <button className={styles.btn1}>Comprar</button>
+                            <button className={styles.btn2}>Sobre</button>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" className={styles.card}>
+                        <Image className={styles.img} src={'/products/prego.png'} width={400} height={400} />
+                        <div className={styles.txt_section}>
+                            <p className={styles.title_product}>Prego</p>
+                            <button className={styles.btn1}>Comprar</button>
+                            <button className={styles.btn2}>Sobre</button>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" className={styles.card}>
+                        <Image className={styles.img} src={'/products/grampo.jpg'} width={400} height={400} />
+                        <div className={styles.txt_section}>
+                            <p className={styles.title_product}>Grampo</p>
+                            <button className={styles.btn1}>Comprar</button>
+                            <button className={styles.btn2}>Sobre</button>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" className={styles.card}>
+                        <Image className={styles.img} src={'/products/luva.webp'} width={400} height={400} />
+                        <div className={styles.txt_section}>
+                            <p className={styles.title_product}>Luva</p>
                             <button className={styles.btn1}>Comprar</button>
                             <button className={styles.btn2}>Sobre</button>
                         </div>

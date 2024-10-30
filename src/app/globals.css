@@ -15,3 +15,8 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none !important;
+  color: #000000c7 !important;
+}
+

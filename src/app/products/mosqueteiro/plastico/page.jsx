@@ -1,7 +1,7 @@
 "use client"
 
 import Nav from "@/app/components/nav/Nav";
-import styles from "../Products.module.css"
+import styles from "../../Products.module.css"
 import Image from "next/image";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -82,31 +82,14 @@ export default function Alambrado() {
                         </button>
                     </div>
                 </div>
-                <h1 className={styles.title}>Mosqueteiro</h1>
+                <h1 className={styles.title}>Mosqueteiro plástico</h1>
                 <div data-aos="fade-up" className={styles.card}>
-                        <Image className={styles.img} src={'/products/plastico.jpg'} width={300} height={300} />
-                        <div className={styles.txt_section}>
-                            <p className={styles.title_product}>Plástico</p>
-                            <button className={styles.btn1}>Comprar</button>
-                            <button className={styles.btn2}>Sobre</button>
-                        </div>
+                    <Image className={styles.img} src={'/products/plastico.jpg'} width={300} height={300} />
+                    <div className={styles.txt_section}>
+                        <button className={styles.btn1}>Comprar</button>
+                        <button className={styles.btn2}>Sobre</button>
                     </div>
-                    <div data-aos="fade-up" className={styles.card}>
-                        <Image className={styles.img} src={'/products/vidro.jpeg'} width={300} height={300} />
-                        <div className={styles.txt_section}>
-                            <p className={styles.title_product}>Fibra de Vidro</p>
-                            <button className={styles.btn1}>Comprar</button>
-                            <button className={styles.btn2}>Sobre</button>
-                        </div>
-                    </div>
-                    <div data-aos="fade-up" className={styles.card}>
-                        <Image className={styles.img} src={'/products/aluminio.webp'} width={300} height={300} />
-                        <div className={styles.txt_section}>
-                            <p className={styles.title_product}>Alumínio</p>
-                            <button className={styles.btn1}>Comprar</button>
-                            <button className={styles.btn2}>Sobre</button>
-                        </div>
-                    </div>
+                </div>
             </div>
 
 
@@ -188,27 +171,10 @@ export default function Alambrado() {
 
                 </div>
                 <div className={styles.right}>
-                    <h1 className={styles.title}>Mosqueteiro</h1>
+                    <h1 className={styles.title}>Mosqueteiro plástico</h1>
                     <div data-aos="fade-up" className={styles.card}>
                         <Image className={styles.img} src={'/products/plastico.jpg'} width={400} height={400} />
                         <div className={styles.txt_section}>
-                            <p className={styles.title_product}>Plástico</p>
-                            <button className={styles.btn1}>Comprar</button>
-                            <button className={styles.btn2}>Sobre</button>
-                        </div>
-                    </div>
-                    <div data-aos="fade-up" className={styles.card}>
-                        <Image className={styles.img} src={'/products/vidro.jpeg'} width={400} height={400} />
-                        <div className={styles.txt_section}>
-                            <p className={styles.title_product}>Fibra de Vidro</p>
-                            <button className={styles.btn1}>Comprar</button>
-                            <button className={styles.btn2}>Sobre</button>
-                        </div>
-                    </div>
-                    <div data-aos="fade-up" className={styles.card}>
-                        <Image className={styles.img} src={'/products/aluminio.webp'} width={400} height={400} />
-                        <div className={styles.txt_section}>
-                            <p className={styles.title_product}>Alumínio</p>
                             <button className={styles.btn1}>Comprar</button>
                             <button className={styles.btn2}>Sobre</button>
                         </div>

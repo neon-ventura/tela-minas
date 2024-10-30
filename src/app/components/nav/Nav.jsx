@@ -178,8 +178,12 @@ export default function Nav() {
                     </div>
                 </div>
                 <div className={styles.icons}>
-                    <Image className={styles.icons_item} src={'/nav/zap_icon.png'} height={70} width={70} />
-                    <Image className={styles.icons_item} src={'/nav/ig_icon.png'} height={70} width={70} />
+                    <a href="https://api.whatsapp.com/send/?phone=553333321740&text&type=phone_number&app_absent=0">
+                        <Image className={styles.icons_item} src={'/nav/zap_icon.png'} height={70} width={70} />
+                    </a>
+                    <a href="https://www.instagram.com/telaminasoficial/">
+                        <Image className={styles.icons_item} src={'/nav/ig_icon.png'} height={70} width={70} />
+                    </a>
                 </div>
             </div>
 
