@@ -83,6 +83,10 @@
     color: white;
 }
 
+.content_pc {
+    display: none;
+}
+
 @media (min-width: 720px) {
     .content {
         display: none;
@@ -92,14 +96,24 @@
         display: flex;
     }
 
+    .title {
+        font-size: 4em;
+        text-align: center;
+    }
+
     .left {
         width: 30%;
         background-color: #cd4244;
-        height: 100px;
+        height: calc(100vh - 20px);
+        /* Altura total da viewport menos um pequeno espaçamento */
         position: sticky;
         top: 0;
-        height: 100vh;
         border-radius: 0px 20px;
+        padding-left: 50px;
+        overflow-y: auto;
+        /* Habilita a rolagem vertical */
+        padding-bottom: 20px;
+        /* Espaço extra no final para evitar que o conteúdo fique muito próximo do limite */
     }
 
     .right {
@@ -125,7 +139,7 @@
         transition: 0.5s;
         border: 1px solid #cd4244;
     }
-    
+
     .btn2 {
         padding: 20px;
         width: 300px;
@@ -135,5 +149,39 @@
     .btn2:hover {
         background-color: #cd4244;
         transition: 0.5s;
+    }
+
+    .list {
+        list-style-type: none;
+        /* Remove os marcadores padrão */
+        padding-left: 0;
+    }
+
+    .li {
+        font-size: 18px;
+        font-weight: bold;
+        padding: 8px 0;
+        /* Espaçamento entre os itens principais */
+        cursor: pointer;
+    }
+
+    .li:hover {
+        color: #fff;
+    }
+
+    .sublist {
+        list-style-type: disc;
+        /* Adiciona marcadores */
+        padding-left: 20px;
+        /* Indenta para separar dos itens principais */
+        margin-top: 5px;
+    }
+
+    .subLi {
+        font-size: 16px;
+        font-weight: normal;
+        color: #3a3535;
+        /* Cor mais suave para os subitens */
+        padding: 4px 0;
     }
 }
